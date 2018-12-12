@@ -2,13 +2,12 @@
 
 
 // import all files here
+@import url("https://use.typekit.net/zhb5abj.css");
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700|Old+Standard+TT:400i');
 
-
-$body-font: 'Lato', sans-serif;
-$headers-font: 'Montserrat', sans-serif;
-$accent-font: 'Old Standard TT', serif;
+$body-font: 'Filson Pro', sans-serif;
+$headers-font: 'Filson Pro', sans-serif;
+$accent-font: 'interstate-mono', monospace;
 
 
 @media (min-width: $sm-screen) {

@@ -1,5 +1,16 @@
 /* ------ PAGES : HOMEPAGE ------ */
 
+#pages-home {
+  display: flex;
+  justify-content: center;
+  align-center: center;
+}
+
+#brand-title {
+  h1 {
+    font-size: 6rem;
+  }
+}
 
 
 @media (min-width: $sm-screen) {

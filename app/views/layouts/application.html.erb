@@ -10,7 +10,7 @@
     <%#= favicon_link_tag asset_path('favicon.png') %> <!-- uncomment when you have a favicon set -->
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-  <body>
+  <body id="<%= controller_name %>-<%= action_name %>">
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
