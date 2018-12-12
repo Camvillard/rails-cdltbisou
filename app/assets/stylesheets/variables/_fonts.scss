@@ -1,0 +1,24 @@
+/* ------ VARIABLES : FONTS ------ */
+
+
+// import all files here
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700|Old+Standard+TT:400i');
+
+
+$body-font: 'Lato', sans-serif;
+$headers-font: 'Montserrat', sans-serif;
+$accent-font: 'Old Standard TT', serif;
+
+
+@media (min-width: $sm-screen) {
+} // end of sm-screen - 768px
+
+@media (min-width: $md-screen) {
+} // end of md-screen - 992px
+
+@media (min-width: $lg-screen) {
+} // end of lg-screen - 1200px
+
+@media (min-width: $hg-screen) {
+} // end of hg-screen - 1440px
