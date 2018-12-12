@@ -3,18 +3,38 @@
 
 body {
   font-size: 62.5%;
-  color: $medium-gray;
+  color: $gray-blue;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $headers-font;
+  color: $dark-blue;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+span.accent-title {
+  font-weight: $font-weight-light;
+}
 
 p {
   font-size: 1rem;
 }
 
+
+::selection {
+  background:$teal-blue;
+}
 
 
 @media (min-width: $sm-screen) {
