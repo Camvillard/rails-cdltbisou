@@ -4,10 +4,10 @@ class MessagesController < ApplicationController
   end
 
   def create
-    # raise
     @message = Message.new(message_params)
     if @message.valid?
       ContactMailer.contact(@message).deliver_now
+      # raise
       redirect_to new_message_path
       flash[:notice] = "We have received your message and will be in touch soon!"
     else
@@ -19,6 +19,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:name, :email, :subject, :body)
+    params.require(:message).permit(:name, :email, :subject, :body, :sender)
   end
 end

@@ -5,8 +5,8 @@ class ContactMailer < ApplicationMailer
 
     mail(to: 'salut@cdltbisou.com',
          body: @message.body,
-         from: @message.email
+         sender: @message.email,
+         from: 'salut@cdltbisou.com'
     )
-
   end
 end
