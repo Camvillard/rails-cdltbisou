@@ -1,5 +1,35 @@
 /* ------ COMPONENTS : FORMS ------ */
 
+form {
+  width: 100%;
+
+  input {
+    width: 100%;
+    border: none;
+    background: $light-gray;
+    height: 1.8rem;
+    margin: 1.4rem auto;
+  }
+
+  input:hover,
+  input:active,
+  input:visited,
+  input:focus {
+    outline: none;
+    outline-offset: 0px;
+  }
+
+  textarea {
+    width: 100%;
+    border: none;
+    background: $light-gray;
+  }
+
+  ::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
 
 
 @media (min-width: $sm-screen) {

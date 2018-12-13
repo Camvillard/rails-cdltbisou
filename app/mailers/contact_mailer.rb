@@ -4,8 +4,7 @@ class ContactMailer < ApplicationMailer
     @message = message
 
     mail(to: 'salut@cdltbisou.com',
-         # body: @message.body,
-         subject: "new message from cdltbisou! #{@message.email}",
+         subject: "new message from cdltbisou !",
          from: 'salut@cdltbisou.com'
     )
   end
