@@ -9,9 +9,9 @@ $body-font: 'Filson Pro', sans-serif;
 $headers-font: 'Filson Pro', sans-serif;
 $accent-font: 'interstate-mono', monospace;
 
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-bold: 800;
+$font-weight-light: 300; //interstate and filson
+$font-weight-regular: 400; //filson
+$font-weight-bold: 800; //filson
 
 
 @media (min-width: $sm-screen) {

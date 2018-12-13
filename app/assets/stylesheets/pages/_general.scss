@@ -7,9 +7,19 @@ body {
   font-family: $body-font;
 }
 
-h1, h2, h3, h5 {
-  font-family: $headers-font;
+h1, h2, h3, h4, h5, h6 {
   color: $dark-blue;
+}
+
+h1, h2, h5 {
+  font-family: $headers-font;
+  font-weight: $font-weight-bold;
+}
+
+
+h4, h6 {
+  font-weight: $font-weight-light;
+  font-family: $accent-font;
 }
 
 h1 {
@@ -22,12 +32,14 @@ h2 {
 
 h3 {
   font-size: 4.2rem;
+  font-family: $headers-font;
+  font-weight: $font-weight-light;
+  text-transform: uppercase;
 }
 
 h4 {
   font-size: 3.6rem;
   font-family: $accent-font;
-  color: $dark-blue;
 }
 
 h5 {
@@ -37,7 +49,6 @@ h5 {
 h6 {
   font-size: 2.8rem;
   font-family: $accent-font;
-  color: $dark-blue;
 }
 
 span.accent-title {
@@ -45,7 +56,7 @@ span.accent-title {
 }
 
 p, a {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 a {
@@ -67,6 +78,41 @@ a {
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
+  h1 {
+    font-size: 6.2rem;
+  }
+
+  h2 {
+    font-size: 5.4rem;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+  }
+
+  h4 {
+    font-size: 3.6rem;
+    font-family: $accent-font;
+    color: $dark-blue;
+  }
+
+  h5 {
+    font-size: 2.8rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+    font-family: $accent-font;
+    color: $dark-blue;
+  }
+
+  span.accent-title {
+    font-weight: $font-weight-light;
+  }
+
+  p, a {
+    font-size: 1.6rem;
+  }
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {
