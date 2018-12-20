@@ -1,27 +1,45 @@
 /* ------ PAGES : HOMEPAGE ------ */
 
-#pages-home {
+#home-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  // align-items: center;
   width: 100vw;
   height: 100vh;
+  padding-left: 5vw;
 }
 
 #brand-title {
-  width: 600px;
+  width: 75vw;
+  margin-top: 40vh;
+  margin-bottom: 10px;
   h3 {
-    text-align: center;
-  }
-}
-#brand-infos {
-  text-align: center;
-  h4 {
     font-size: 2rem;
+    margin: 2rem auto;
   }
 }
 
+#brand-infos {
+  h5 {
+    font-size: 1.8rem;
+    margin: 0.4rem auto;
+  }
+  h5.accent-title {
+    font-weight: $font-weight-light;
+  }
+}
+
+#header-contact {
+  position: fixed;
+  top: 4vh;
+  right: 5vw;
+  a {
+    background: $golden-taupe;
+    padding: 0 1rem;
+    color: white;
+  }
+}
 
 @media (min-width: $sm-screen) {
 } // end of sm-screen - 768px
@@ -30,6 +48,20 @@
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
+  #brand-title {
+    width: 40vw;
+    h3 {
+      font-size: 3.4rem;
+    }
+  }
+
+  #brand-infos {
+    margin-bottom: 4vh;
+    h5 {
+      font-size: 2.2rem;
+    }
+  }
+
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {
