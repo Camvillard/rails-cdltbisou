@@ -5,11 +5,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+
+#contact-content {
+  background: $teal-blue;
 }
 
 form.new_message {
-  width: 60%;
+  // width: 100%;
   margin: auto;
+  font-family: $accent-font;
+
+  label {
+    display: inline-block;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: lowercase;
+  }
+
+  input,
+  textarea {
+    display: inline-block;
+    color: white;
+    background: $teal-blue;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    border-bottom: 2px solid white;
+  }
+
+  ::placeholder {
+    color: white;
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: $sm-screen) {
@@ -22,4 +50,38 @@ form.new_message {
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {
+  #messages-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: space-between;
+    min-height: 100vh;
+    padding-left: 14vw;
+  }
+
+  #contact-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 15vh);
+  }
+
+  #contact-header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-left: -50px;
+    margin-top: -12rem;
+    h1 {
+      font-size: 10rem;
+    }
+    h6 {
+      // width: 30%;
+      margin-left: 0;
+    }
+  }
+
+  #contact-form {
+    grid-column: 5 / 11;
+    grid-row: 3 / 5;
+  }
+
 } // end of hg-screen - 1440px
