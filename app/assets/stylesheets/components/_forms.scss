@@ -14,7 +14,11 @@ form {
   input:hover,
   input:active,
   input:visited,
-  input:focus {
+  input:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:visited,
+  textarea:focus {
     outline: none;
     outline-offset: 0px;
   }
@@ -23,6 +27,10 @@ form {
     width: 100%;
     border: none;
     background: $light-gray;
+  }
+
+  input[type="submit"] {
+    border: none;
   }
 
   ::placeholder {

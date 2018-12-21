@@ -1,6 +1,12 @@
 /* ------ COMPONENTS : BUTTONS ------ */
 
-
+button {
+  background-color: $teal-blue;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  font-size: 2rem;
+}
 
 @media (min-width: $sm-screen) {
 } // end of sm-screen - 768px
