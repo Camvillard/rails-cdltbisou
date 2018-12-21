@@ -12,10 +12,15 @@
   background: $teal-blue;
 }
 
-form.new_message {
-  // width: 100%;
-  margin: auto;
-  font-family: $accent-font;
+#contact-form {
+    width: 80%;
+    margin: auto;
+    font-family: $accent-font;
+
+  ::placeholder {
+    color: white;
+    font-size: 1.8rem;
+  }
 
   label {
     display: inline-block;
@@ -29,25 +34,68 @@ form.new_message {
     display: inline-block;
     color: white;
     background: $teal-blue;
-    margin: 2rem auto;
     font-size: 1.8rem;
-    // @include hr-thin(white);
+    @include hr-thin(white);
+    padding-bottom: 3px;
+    padding-top: 5px;
   }
 
-  ::placeholder {
+  input {
+    height: 2.4rem;
+    margin: 2.2rem auto 2.2rem 4px;
+  }
+
+  textarea {
+    margin: 0.5rem auto 2.2rem;
+    height: 6.8rem;
+  }
+
+  input:hover,
+  input:active,
+  input:visited,
+  input:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:visited,
+  textarea:focus {
+    background: $golden-taupe;
+    @include hr-thin(transparent);
+  }
+
+  .text label {
+    margin: 2.2rem auto 0px;
+  }
+
+  button {
+    color: $dark-blue;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 3px;
+    background: $dark-blue;
+    transition: all 0.5s ease;
+    z-index: -1;
+
+  }
+
+  button:hover {
     color: white;
-    font-size: 1.8rem;
+    &::before {
+    transform: translateX(110px);
+    background: white;
+      // transform: scaleX(50);
+      // width: 100%;
+    }
   }
 
-}
-  #contact-form {
-    button {
-      color: $golden-taupe;
-    }
-    button::before {
-      content: "|";
-    }
-  }
+} // end of #contact form
 
 
 
@@ -74,6 +122,7 @@ form.new_message {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 15vh);
+    padding-bottom: 20px;
   }
 
   #contact-header {
