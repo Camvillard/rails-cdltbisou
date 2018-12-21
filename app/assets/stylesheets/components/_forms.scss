@@ -4,7 +4,7 @@ form {
   width: 100%;
 
   input {
-    width: 100%;
+    // width: 100%;
     border: none;
     background: $light-gray;
     height: 1.8rem;
@@ -14,7 +14,11 @@ form {
   input:hover,
   input:active,
   input:visited,
-  input:focus {
+  input:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:visited,
+  textarea:focus {
     outline: none;
     outline-offset: 0px;
   }
@@ -23,6 +27,10 @@ form {
     width: 100%;
     border: none;
     background: $light-gray;
+  }
+
+  input[type="submit"] {
+    border: none;
   }
 
   ::placeholder {
