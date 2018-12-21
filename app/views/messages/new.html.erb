@@ -10,9 +10,9 @@
   <div id="contact-form">
 
     <%= simple_form_for(@message, {url: new_message_path}) do |f| %>
-      <%= f.input :email, label: "adresse mail : " %>
-      <%= f.input :name, label: "nom & prénom : "%>
-      <%= f.input :body, as: :text, label: "message : " %>
+      <%= f.input :email, label: "adresse mail :" %>
+      <%= f.input :name, label: "nom & prénom :"%>
+      <%= f.input :body, as: :text, label: "message :" %>
 
       <%#= f.submit value: "envoyer" %>
       <button>envoyer</button>
