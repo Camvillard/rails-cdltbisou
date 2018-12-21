@@ -1,5 +1,15 @@
 /* ------ COMPONENTS : BUTTONS ------ */
 
+
+/* ----------
+*   1. general styles for buttons
+*   2. back home buttons
+*
+*/
+
+
+// 1. general styles for buttons
+
 button {
   background-color: $teal-blue;
   border: none;
@@ -7,6 +17,15 @@ button {
   color: white;
   font-size: 2rem;
 }
+
+// 2. back home buttons
+
+.back-home {
+  .arrow-icon {
+    width: 40px;
+  }
+}
+
 
 @media (min-width: $sm-screen) {
 } // end of sm-screen - 768px
