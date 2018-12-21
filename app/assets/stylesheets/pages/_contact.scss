@@ -58,6 +58,7 @@
   textarea:active,
   textarea:visited,
   textarea:focus {
+    transition: all 0.3s ease-in-out;
     background: $golden-taupe;
     @include hr-thin(transparent);
   }
