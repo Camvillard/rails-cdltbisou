@@ -1,15 +1,55 @@
 /* ------ PAGES : CONTACT ------ */
 
 #messages-new {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+}
+
+#contact-back {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  left: 10px;
+  width: 120px;
+  height: 50px;
+
+
+  a.btn-back-home span {
+    transition: all 0.3s ease;
+    color: $teal-blue;
+  }
+
+  span.link-text {
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
+
+  a:hover span.link-text{
+    transform: translateX(25%);
+    color: $golden-taupe;
+  }
+
+  a:hover #arrow-stroke-contact {
+    fill: $golden-taupe;
+    stroke: $golden-taupe;
+  }
+}
+
+
+#arrow-stroke-contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: white;
+  stroke: $teal-blue;
+  width: 70px;
+  transition: all 0.3s ease;
 }
 
 #contact-content {
   background: $teal-blue;
+  // min-height: 90vh;
+  padding: 10px 20px 40px;
 }
 
 #contact-form {
@@ -73,6 +113,7 @@
     transition: all 0.3s ease;
     z-index: 10;
   }
+
   button::before {
     content: "";
     position: absolute;
@@ -83,7 +124,6 @@
     background: $dark-blue;
     transition: all 0.5s ease;
     z-index: -1;
-
   }
 
   button:hover {
@@ -107,9 +147,6 @@
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
-} // end of lg-screen - 1200px
-
-@media (min-width: $hg-screen) {
   #messages-new {
     display: flex;
     flex-direction: column;
@@ -117,6 +154,11 @@
     align-items: space-between;
     min-height: 100vh;
     padding-left: 14vw;
+  }
+
+
+  #contact-back {
+    margin-bottom: 60px;
   }
 
   #contact-content {
@@ -144,5 +186,8 @@
     grid-column: 5 / 11;
     grid-row: 3 / 5;
   }
+} // end of lg-screen - 1200px
+
+@media (min-width: $hg-screen) {
 
 } // end of hg-screen - 1440px

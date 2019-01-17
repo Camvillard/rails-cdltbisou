@@ -7,12 +7,15 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.valid?
       ContactMailer.contact(@message).deliver_now
-      redirect_to new_message_path
+      redirect_to thanks_path
       flash[:notice] = "merci pour votre message !"
     else
       flash[:notice] = "il y a eu une erreur lors de l'envoi du message, merci d'essayer à nouveau."
       render :new
     end
+  end
+
+  def thanks
   end
 
   private

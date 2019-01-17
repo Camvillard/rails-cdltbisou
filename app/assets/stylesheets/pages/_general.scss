@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.4rem;
+  font-size: 5.2rem;
   margin: 4.6rem auto 2.4rem;
 }
 
@@ -68,6 +68,11 @@ h6 {
 
 p, a {
   font-size: 1.4rem;
+}
+
+.accent-text {
+  font-family: $accent-font;
+  font-size: 1.3rem;
 }
 
 a {
@@ -121,6 +126,10 @@ a {
 
   p, a {
     font-size: 1.6rem;
+  }
+
+  .accent-text {
+    font-size: 1.5rem;
   }
 } // end of lg-screen - 1200px
 
