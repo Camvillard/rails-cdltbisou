@@ -30,6 +30,14 @@ body#messages-thanks {
   p {
     text-align: right;
   }
+  a {
+    background-color: white;
+    color: $golden-taupe;
+  }
+
+  a:hover {
+    color: $dark-blue;
+  }
 }
 
 #merci-back {
@@ -108,10 +116,16 @@ body#messages-thanks {
 
   #merci-more {
     grid-column: 3 / span 3;
+
     p {
       text-align: left;
     }
   }
+
+  #merci-back {
+    left: 80vw;
+  }
+
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {
