@@ -82,6 +82,14 @@ a {
   &:hover {
     text-decoration: none;
   }
+
+  &:visited,
+  &:focus, {
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0px;
+    color: $dark-blue;
+  }
 }
 
 ::selection {

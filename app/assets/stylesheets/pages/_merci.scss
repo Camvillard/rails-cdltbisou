@@ -34,7 +34,13 @@ body#messages-thanks {
     background-color: white;
     color: $golden-taupe;
   }
-
+  a:focus,
+  a:visited {
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0px;
+    color: $teal-blue;
+  }
   a:hover {
     color: $dark-blue;
   }
